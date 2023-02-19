@@ -1,7 +1,8 @@
 import feedparser
-
 print ('enter the url')
 url = input()
+d = feedparser.parse(url)
+
 try:
     title = d['feed']['title']
     print(title)
